@@ -1,0 +1,7 @@
+Thread 3 wrote log 1
+Thread 2 wrote log 2
+Thread 1 wrote log 3
+Thread 1 wrote log 4
+Thread 3 wrote log 3
+Thread 1 wrote log 5
+Thread 3 wrote log 5
