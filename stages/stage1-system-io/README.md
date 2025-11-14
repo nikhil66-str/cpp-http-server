@@ -1,35 +1,36 @@
 # Stage 1 â€” C++ System-Level I/O (Final)
 
-## í¾¯ Goal
-Combine all key concepts:
-- Stack vs Heap (conceptually)
-- File I/O using `fstream`
-- Exception Handling & RAII
-- Multithreading (`std::thread`)
-- Synchronization (`std::mutex`)
+## Goal
+This stage focuses on mastering low-level system programming fundamentals in C++.  
+Key concepts covered:
+
+- Stack vs Heap memory (conceptual understanding)
+- File I/O using `std::fstream`
+- Exception handling and RAII
+- Multithreading with `std::thread`
+- Synchronization using `std::mutex`
 
 ---
 
-## í·© Mini Project: Multithreaded Logger
+## Mini Project: Multithreaded Logger
 
-This program:
-1. Launches 3 threads writing logs to a shared file (`log.txt`)
-2. Uses a mutex for safe file access
-3. Reads the file afterward
-4. Demonstrates exception safety
+This final Stage 1 project demonstrates:
+
+1. Launching 3 worker threads  
+2. Each thread safely writing logs to a shared file (`log.txt`)  
+3. File access protected with a mutex  
+4. RAII and exception-safe design  
+5. Reading back the file contents after all threads finish  
+
+This project ties together everything learned in Stage 1.
 
 ---
 
-## í·± Build & Run
+## Build & Run
+
+Using CMake (as configured in your repo):
 
 ```bash
 cmake -S ../.. -B ../../build
 cmake --build ../../build -j
 ./../../build/bin/stage1_final
-
-All threads finished.
-Thread 1 wrote log 1
-Thread 1 wrote log 2
-Thread 2 wrote log 1
-Thread 3 wrote log 1
-...

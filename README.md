@@ -1,10 +1,10 @@
-# í·  C++ HTTP Server Learning Journey
+#  C++ HTTP Server Learning Journey
 
 From low-level system calls to a multithreaded HTTP server â€” this repo documents my learning journey in **system-level C++**.
 
 ---
 
-## íº€ Stages Overview
+##  Stages Overview
 
 | Stage | Focus | Description |
 |--------|--------|-------------|
@@ -16,7 +16,7 @@ From low-level system calls to a multithreaded HTTP server â€” this repo documen
 
 ---
 
-## í·± Build & Run
+##  Build & Run
 
 ```bash
 cmake -S . -B build
